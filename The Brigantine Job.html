@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Brigantine Job" startnode="1" creator="Twine" creator-version="2.3.5" ifid="6DC47781-CA6F-4214-BE6E-F87093569190" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="614,83" size="100,100">&lt;script&gt;
+<tw-storydata name="The Brigantine Job" startnode="1" creator="Twine" creator-version="2.3.5" ifid="6DC47781-CA6F-4214-BE6E-F87093569190" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="613,83" size="100,100">{&lt;script&gt;
 var whiteStyle = document.createElement(&#39;style&#39;);
 whiteStyle.id = &#39;white-style&#39;;
 whiteStyle.textContent = &#96;
@@ -20,19 +20,35 @@ tw-story {
 	color: black;
 }&#96;;
 document.body.appendChild(whiteStyle);
+
+var coolStyle = document.createElement(&#39;style&#39;);
+coolStyle.id = &#39;cool-style&#39;;
+coolStyle.textContent = &#96;
+tw-story {
+	transition: background-color 1s, color 1s;
+}&#96;;
+document.body.appendChild(whiteStyle);
 &lt;/script&gt;
-
-The waves sigh, the wood creaks, and the rigging whines as you try to get some sleep on your first day out of port. You’re the captain of the good ship Die A Log (which is the last time you let Ash name anything). Its crew of four is you, the fearless leader and cunning diplomat; Ash, the pacing bundle of nerves; Bri, child of merchants and swashbuckler extraordinaire; and Cal, a bored engineer only entertained by explosions.
-
+}The waves sigh, the wood creaks, and the rigging whines as you try to get some sleep on your first day out of port. You’re the captain of the good ship Die A Log (which is the last time you let Ash name anything). Its crew of four is you, the fearless leader and cunning diplomat; Ash, the pacing bundle of nerves; Bri, child of merchants and swashbuckler extraordinaire; and Cal, a bored engineer only entertained by explosions.
+{
 (set: $ash_rep to 0)
-(set: $bri_rep to 0)
+(set: $bri_rep to 1)
 (set: $cal_rep to 0)
 (set: $cal_antagonized to 0)
 
 (set: $morning_choice to &quot;&quot;)
-
+}
 [[Take a look around your cabin]]
-[[Go to sleep]]</tw-passagedata><tw-passagedata pid="2" name="Take a look around your cabin" tags="" position="522,231" size="100,100">Your cabin is firmly on the broom closet end of captain’s quarters. Your clutter however, is firmly galleon-scale. While no dirty laundry is visible, as that would be quite the uncaptainlike indiscretion, piles of books and miscellaneous knick-knacks blot out any hints of flat surfaces. In this chaos you see [[a shiny ledger]], [[“Applying Multiple Affinities in the Real World,” a book]], [[a grubby pamphlet peeking out from under your hammock]], [[a sword]], [[a bonsai tree]], and [[an unsealed envelope]]. At some point you should [[go to sleep-&gt;Go to sleep]].</tw-passagedata><tw-passagedata pid="3" name="Go to sleep" tags="" position="1253,230" size="100,100">You wake up and put on your most dashing outfit, buckling on a sword. A new captain must look the part, especially on the first day out of port. You [[walk out onto the deck]].</tw-passagedata><tw-passagedata pid="4" name="a shiny ledger" tags="" position="312,388" size="100,100">&lt;style&gt;
+[[Go to sleep]]</tw-passagedata><tw-passagedata pid="2" name="Take a look around your cabin" tags="" position="522,231" size="100,100">Your cabin is firmly on the broom closet end of captain’s quarters. Your clutter however, is firmly galleon-scale. While no dirty laundry is visible, as that would be quite the uncaptainlike indiscretion, piles of books and miscellaneous knick-knacks blot out any hints of flat surfaces. In this chaos you see
+
+	[[a shiny ledger]],
+	[[“Applying Multiple Affinities in the Real World,” a book]],
+	[[a grubby pamphlet peeking out from under your hammock]],
+	[[a sword]],
+	[[a bonsai tree]],
+	and [[an unsealed envelope]].
+	
+At some point you should [[go to sleep-&gt;Go to sleep]].</tw-passagedata><tw-passagedata pid="3" name="Go to sleep" tags="" position="1253,230" size="100,100">You wake up and put on your most dashing outfit, buckling on a sword. A new captain must look the part, especially on the first day out of port. You [[walk out onto the deck]].</tw-passagedata><tw-passagedata pid="4" name="a shiny ledger" tags="" position="312,388" size="100,100">{&lt;style&gt;
 tr:nth-child(even) {
 	background-color: rgba(128, 128, 128, 0.3);
 }
@@ -72,9 +88,11 @@ td {
 		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
 		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
 	&lt;/tr&gt;
-&lt;/table&gt;
+&lt;/table&gt;}
 
-[[Put down the ledger-&gt;Take a look around your cabin]]</tw-passagedata><tw-passagedata pid="5" name="“Applying Multiple Affinities in the Real World,” a book" tags="" position="456,381" size="100,100">An attempt at writing a fun and exciting treatise on Multiplicity, the strain of magic that manifested within you during your childhood. It begins with the usual disclaimer that Multiplicity is quite useless compared to the focus of Stillness or Action then descends into an unsubstantiated set of exercises designed to allow multis to dive to the same depth of communion as the serene Stills and brash Actives that run the world. Over the course of the first chapter, your marginalia devolve from “Interesting! Better check that out” to “I’d rather drown myself than only talk to the sea for a year” and “I bet this author’s never had a nice chat with feldspar, no way they’re an actual multi.”
+[[Put down the ledger-&gt;Take a look around your cabin]]</tw-passagedata><tw-passagedata pid="5" name="“Applying Multiple Affinities in the Real World,” a book" tags="" position="456,381" size="100,100">An attempt at writing a fun and exciting treatise on Multiplicity, the strain of magic that manifested within you during your childhood. It begins with the usual disclaimer that Multiplicity is quite useless compared to the focus of Stillness or Action then descends into an unsubstantiated set of exercises designed to allow multis to dive to the same depth of communion as the serene Stills and brash Actives that run the world.
+
+Over the course of the first chapter, your marginalia devolve from “Interesting! Better check that out” to “I’d rather drown myself than only talk to the sea for a year” and “I bet this author’s never had a nice chat with feldspar, no way they’re an actual multi.”
 
 [[Put down the book-&gt;Take a look around your cabin]] </tw-passagedata><tw-passagedata pid="6" name="a grubby pamphlet peeking out from under your hammock" tags="" position="165,386" size="100,100">The pamphlet features a photograph of a carefully diverse set of students having what appears to be a study-picnic in soon-to-be-ruined graduation gowns. The title, &quot;Graduating into success,&quot; is plastered over this nonsensical picture in a garish font.
 
@@ -82,35 +100,46 @@ Inside the pamphlet, illustrations of conventionally successful people are inter
 
 &quot;Now that you’re done with your education, get to value creation by joining one of our affiliated guilds! Are you a savvy Still? Apply to the Naval Gazers! As you help out the royal navy money will roll in like the tide. If you’ve chosen metal as your mastery, become a part of the Martial Magicians and show enemies of the realm the fruit of your long nights spent studying. Unsure where to go? There’s always the Ardent Adventurers where many of our students support the kingdom through consultation and service.&quot;
 
-[[Put down this trash-&gt;Take a look around your cabin]] </tw-passagedata><tw-passagedata pid="7" name="a sword" tags="" position="597,381" size="100,100">It&#39;s a sword.
+[[Put down this trash-&gt;Take a look around your cabin]] </tw-passagedata><tw-passagedata pid="7" name="a sword" tags="" position="597,382" size="100,100">It&#39;s a sword.
 
 [[Take a look around your cabin]] </tw-passagedata><tw-passagedata pid="8" name="a bonsai tree" tags="" position="747,381" size="100,100">Your pride and joy that somehow survived five years of neglect at the Academy.
 
-[[Take a look around your cabin]] </tw-passagedata><tw-passagedata pid="9" name="an unsealed envelope" tags="" position="897,381" size="100,100">Pax, I sure hope you were serious about that pirate thing. I was bored out of my mind playing accountant for my parents when I saw that they think their competitors are shipping a small, highly valuable artifact from Sivera to Goldport two months from now. They’re liquidating their assets to prepare for the financial shitstorm this will cause but I had a better idea. A bit of research and “research” later I have some very interesting information (and a minor bounty on my head in Viven). Gather a crew and meet me in Sivera for the opportunity of a lifetime.
+[[Take a look around your cabin]] </tw-passagedata><tw-passagedata pid="9" name="an unsealed envelope" tags="" position="897,381" size="100,100">Pax, I sure hope you were serious about that pirate thing. I was bored out of my mind playing accountant for my parents when I saw that they think their competitors are shipping a small, highly valuable artifact from Sivera to Goldport two months from now. They’re liquidating their assets to prepare for the financial shitstorm this will cause but I had a better idea. A bit of research and “research” later I have some very interesting information (and a minor bounty on my head in Viven). Two words: Eclipse Heist. Gather a crew and meet me in Sivera for the opportunity of a lifetime.
 
 Bri
 
 [[Put it down-&gt;Take a look around your cabin]] </tw-passagedata><tw-passagedata pid="10" name="Approach Bri" tags="" position="882,505" size="100,100">    Bri pauses in their drill to talk to you. Smiling, they say, “Hey Pax, I’m glad you could get the gang together. I was worried we’d never see eachother again after graduation. It’s nice to catch up, although I am a little disappointed that you hadn’t gathered a whole pirate crew.”
+	
     “Oh come on Bri, you should know I have built up deep pirate contacts these last two months. You saw the deal that we got on the good ship Die A Log. Admittedly the used ship salesperson’s good mood was due to an odd job I did for them last week, but that’s really a minor detail when you’re as respected by the Sivera Scallywags as I am.”
+	
     “Is that really what they call themse--nevermind. I bow before your illegal nautical prowess, my captain.” Bri gestures to the sword at your belt. “Is that thing just for show or would you care to help me brush up on the finer points of stabbing?”
+	
     [[Yes (Take a few hours to practice with them)]]
-    [[Maybe later-&gt;walk out onto the deck]]</tw-passagedata><tw-passagedata pid="11" name="Talk to Cal" tags="" position="1168,515" size="100,100">    You rush over to Cal, trying to get a sense of the no-doubt-horrific damage being inflicted upon your beautiful iron splurge.
+    [[Maybe later-&gt;walk out onto the deck]]</tw-passagedata><tw-passagedata pid="11" name="Talk to Cal" tags="" position="1168,514" size="100,100">    You rush over to Cal, trying to get a sense of the no-doubt-horrific damage being inflicted upon your beautiful iron splurge.
+	
     Out of breath, you stumble through the sentence before uprighting yourself and speaking with the dignity proper for a captain. “Cracked ice and dead ember do you have any idea how much that cost! As the absolute authority here and the only person between you and the depths of the ocean explain yourself or get planked”
+	
     Cal looks at you quizzically.
+	
     You correct yourself. “Or be forced to walk the plank.”
+	
     “This new model has so many inefficiencies though! You might not have the depth required to understand it as a multi but take a look at this sealwork,” Cal gesture at the plate they just tore out of the cannon’s base. “Uh no offense. But look, you can see that any motion I transfer into this iron will just seep out the edges of the channels here and here. If I just engrave [[a new sigil]] here,” you wince as Cal scrapes the oh-so-expensive plate, “it will take that extra energy and make for a bigger, better boom.”
 	
 	[[Offer to help Cal]]
-	[[Leave them to it-&gt;walk out onto the deck]]</tw-passagedata><tw-passagedata pid="12" name="Track down Ash" tags="" position="1318,515" size="100,100">You find Ash in the ship’s hold cataloguing and organizing your limited supplies for this brief excursion. Without any noticeable pause in their work, Ash begins speaking to you, “Captain, as you’ve likely heard on the way in I’ve noted that we need to oil the hatch in here. That is unless you’re planning on using it to detect intruders, in which case I applaud your ingenuity. I’ve completed my initial survey of our food and water and noticed that if we get becalmed for more than a week we’ll have to go to quarter rations if we want any chance of surviving.” They continue without any regard to the flow of breath or conversation, “Being from the most noble house of Rel I am a miracle worker but even a Still of my caliber has limits. Oh, speaking of miracles, I was working on a new technique but Cal said they were tired of fishing me out of the ocean so I need a replacement. Do you have the time to help?”
+	[[Leave them to it-&gt;walk out onto the deck]]</tw-passagedata><tw-passagedata pid="12" name="Track down Ash" tags="" position="1318,515" size="100,100">You find Ash in the ship’s hold cataloguing and organizing your limited supplies for this brief excursion.
+
+Without any noticeable pause in their work, Ash begins speaking to you, “Captain, as you’ve likely heard on the way in I’ve noted that we need to oil the hatch in here. That is unless you’re planning on using it to detect intruders, in which case I applaud your ingenuity. I’ve completed my initial survey of our food and water and noticed that if we get becalmed for more than a week we’ll have to go to quarter rations if we want any chance of surviving.”
+
+They continue without any regard to the flow of breath or conversation, “Being from the most noble house of Rae I am a miracle worker but even a Still of my caliber has limits. Oh, speaking of miracles, I was working on a new technique but Cal said they were tired of fishing me out of the ocean so I need a replacement. Do you have the time to help?”
 
     [[Technique?]]
 	[[Maybe later-&gt;walk out onto the deck]]
 </tw-passagedata><tw-passagedata pid="13" name="Yes (Take a few hours to practice with them)" tags="" position="732,721" size="100,100">You practice with Bri for a few hours. It&#39;s clear that Bri, unlike you, has been keeping sharp since the Academy. While you never come close to beating Bri, they never stop smiling during the hours of sparring. You haven&#39;t been this exhausted for a while but you feel accomplished and dangerous, as a pirate captain should be.
-
+{
 (set: $bri_rep to $bri_rep + 1)
 (set: $cal_antagonized to 1)
 (set: $morning_choice to &quot;bri&quot;)
-
+}
 [[You also feel hungry, lunch time!-&gt;lunch]]</tw-passagedata><tw-passagedata pid="14" name="a new sigil" tags="" position="1005,618" size="100,100">You look closer and recognize the sigil as a modification of the channeling sigils you learned about in Introduction to Motive Engraving, a class you were in for a whole month before your inability to pay attention made the professor gently recommend a different focus.
 
 [[Neat-&gt;Talk to Cal]] </tw-passagedata><tw-passagedata pid="15" name="Offer to help Cal" tags="" position="1141,645" size="100,100">Cal doubts your dedication to the cause and general engineering abilities. “Are you sure? I guess I could use a pair of hands”
@@ -123,21 +152,15 @@ Bri
 	
 	[[Talk to Cal]]
 	
-	[[Track down Ash]]</tw-passagedata><tw-passagedata pid="17" name="lunch" tags="" position="679,1570.622314453125" size="100,100">You eat food and have conversations that I will write if I have time. After a while, everyone gets up to resume their work around the ship.
+	[[Track down Ash]]</tw-passagedata><tw-passagedata pid="17" name="lunch" tags="" position="679,1569" size="100,100">You eat food and have conversations that I will write if I have time. After a while, everyone gets ready to resume their work around the ship.
 
-(if: $morning_choice is &#39;ash&#39;)[ [[Continue helping Ash with waterwalking practice]]]
-(else:)[
-Ash pauses before getting up and says, &quot;Captain, if you have the time I could still use some help with the new technique I&#39;m practicing. I haven&#39;t really been able to make any progress without an assistant.&quot;
+(if: $morning_choice is &#39;ash&#39;)[(if: $ash_rep &gt;= 0)[ [[Continue helping Ash with waterwalking practice]]](else:)[Ash leaves.]](else:)[Ash pauses before getting up and says, &quot;Captain, if you have the time I could still use some help with the new technique I&#39;m practicing. I haven&#39;t really been able to make any progress without an assistant.&quot;
 
-[[Help Ash with their new technique]]
-]
+[[Help Ash with their new technique]]]
 
-(if: $morning_choice is &#39;bri&#39;)[
-Bri gets up. &quot;Pax, do you want to continue sparring? I have some new drills I&#39;d like to run.&quot;
+(if: $morning_choice is &#39;bri&#39;)[Bri gets up. &quot;Pax, do you want to continue sparring? I have some new drills I&#39;d like to run.&quot;
 
-[[Continue sparring with Bri]]]
-(else:)[
-Bri gets up. &quot;Pax, do you want to spar a bit? I&#39;ll be on the deck if you want to brush up on your sword skills.&quot;
+[[Continue sparring with Bri]]](else:)[Bri gets up. &quot;Pax, do you want to spar a bit? I&#39;ll be on the deck if you want to brush up on your sword skills.&quot;
 
 [[Spar with Bri]]]
 
@@ -156,15 +179,21 @@ Over the course of the next few hours you witness Cal tear down and rebuild the 
         [[Okay Ash, I’ll help you, just don’t antagonize Cal]]
 		
         [[Maybe later-&gt;walk out onto the deck]]</tw-passagedata><tw-passagedata pid="20" name="Okay Ash, I’ll help you, just don’t antagonize Cal" tags="" position="1339,784" size="100,100">&quot;Thank you so much, Captain Pax!&quot; Ash beams.
+
 &quot;It&#39;s no problem, anything to help a member of my crew!&quot; you reply.
+
 &quot;Anyway, follow me up to the deck and I&#39;ll explain what I&#39;m trying to pull off,&quot; they say, producing a faded life preserver from a crate.
+
 &quot;Since the Academy I&#39;ve been wondering what I can do outside of what&#39;s expected from me. I enjoyed the praise but going from place to place just to do the same exact thing got old quickly. There has to be more to life than just ship go fast and rain go sploosh,&quot; they sigh.
+
 &quot;Anyway, enough of that. I need your help because my new technique requires the open water and I don&#39;t really want to be swept away and drown. If I still the water under my feet I can stand on it like a platform but I&#39;m having trouble maintaining it for more than a few seconds. Unfortunately when I discovered this at the estate and tried to practice my parents assigned a servant even more overprotective than they. That unhelpful sod refused to let me get a feel for when the stillness is about to break because &#39;getting wet would ruin Your Serenity&#39;s clothing and countenance&#39;&quot;
+
 &quot;Long story short just throw this,&quot; they hand you the life preserver, &quot;at me when I shout &#39;circle&#39;. I&#39;ll be over there, thanks!&quot; Ash gestures at a rope hanging into the water from the sail.
 
 [[Welp]]
 
 (set: $morning_choice to &quot;ash&quot;)</tw-passagedata><tw-passagedata pid="21" name="Welp" tags="" position="1309,961" size="100,100">You watch Ash descend the rope and gather themselves for a second before they jump down onto the waves.
+
 A small circle of Stilled water appears around Ash and they miraculously stand above the waves. Vibrating with joy, they wheel around and wave at you. Off balance from the rotation they stagger and the circle flickers.
 
 [[Oh no! Pull them up!]]
@@ -200,23 +229,52 @@ You catapult Ash onto the deck in a sodden blur.
 You help them practice until it&#39;s time for [[lunch]].
 
 (set: $ash_rep to it + 1)
-</tw-passagedata><tw-passagedata pid="27" name="Help Ash with their new technique" tags="" position="403,1702.622314453125" size="100,100">&quot;Thank you so much, Captain Pax!&quot; Ash beams.
+</tw-passagedata><tw-passagedata pid="27" name="Help Ash with their new technique" tags="" position="403,1702" size="100,100">&quot;Thank you so much, Captain Pax!&quot; Ash beams.
+
 &quot;It&#39;s no problem, anything to help a member of my crew!&quot; you reply.
 &quot;Anyway, follow me up to the deck and I&#39;ll explain what I&#39;m trying to pull off,&quot; they say, producing a faded life preserver from a crate.
+
 &quot;Since the Academy I&#39;ve been wondering what I can do outside of what&#39;s expected from me. I enjoyed the praise but going from place to place just to do the same exact thing got old quickly. There has to be more to life than just ship go fast and rain go sploosh,&quot; they sigh.
+
 &quot;Anyway, enough of that. I need your help because my new technique requires the open water and I don&#39;t really want to be swept away and drown. If I still the water under my feet I can stand on it like a platform but I&#39;m having trouble maintaining it for more than a few seconds. Unfortunately when I discovered this at the estate and tried to practice my parents assigned a servant even more overprotective than they. That unhelpful sod refused to let me get a feel for when the stillness is about to break because &#39;getting wet would ruin Your Serenity&#39;s clothing and countenance&#39;&quot;
+
 &quot;Long story short just throw this,&quot; they hand you the life preserver, &quot;at me when I shout &#39;circle&#39;. I&#39;ll be over there, thanks!&quot; Ash gestures at a rope hanging into the water from the sail.
 
 [[Welp-&gt;Welp2]]
-</tw-passagedata><tw-passagedata pid="28" name="Help Cal do...something to the cannon" tags="" position="1087,1710.622314453125" size="100,100">Over the next few hours Cal&#39;s continued cannon tinkering appears to add the ability for the cannon to fire cutlery and other improvised ammunition. You hope it hasn&#39;t done any lasting damage.
+</tw-passagedata><tw-passagedata pid="28" name="Help Cal do...something to the cannon" tags="" position="1552,1720" size="100,100">Over the next few hours Cal&#39;s continued cannon tinkering appears to add the ability for the cannon to fire cutlery and other improvised ammunition. You hope it hasn&#39;t done any lasting damage.
 
-[[Okay then-&gt;dinner]]</tw-passagedata><tw-passagedata pid="29" name="Continue helping Ash with waterwalking practice" tags="" position="107,1726.622314453125" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Continue sparring with Bri" tags="" position="600,1715.622314453125" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="Keep being Cal&#39;s brainless fetching (and fetching) assistant" tags="" position="937,1712.622314453125" size="100,100">Over the next few hours Cal&#39;s continued cannon tinkering appears to add the ability for the cannon to fire cutlery and other improvised ammunition. You hope it hasn&#39;t done any lasting damage.
+[[Okay then-&gt;dinner]]</tw-passagedata><tw-passagedata pid="29" name="Continue helping Ash with waterwalking practice" tags="" position="107,1726" size="100,100">You continue helping out Ash with their practice.
 
-[[Okay then-&gt;dinner]]</tw-passagedata><tw-passagedata pid="32" name="Spar with Bri" tags="" position="720,1720.622314453125" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="dinner" tags="" position="1032,1942.622314453125" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Welp2" tags="" position="403,1852.622314453125" size="100,100">You watch Ash descend the rope and gather themselves for a second before they jump down onto the waves.
+After fishing them out of the water for the eighth time something occurs to you. Motioning them to stop you suggest, &quot;You know Ash, it seems like you&#39;re only Stilling the ocean when you stand on it.&quot;
+
+&quot;Of course, Captain. All I do is water, that&#39;s the way it&#39;s been and will always be. As excellent as I am at youthful rebellion I choose my battles. I&#39;m not a multi like you.&quot;
+
+&quot;Okay okay, hear me out. Have you considered Stilling yourself? We&#39;re made up of water, just like the ocean. Shift your perspective a bit and you can double your efficiency.&quot;
+
+&quot;Wow, they sure taught you some weird things at the Academy when you weren&#39;t busy being kicked out of class. I guess I&#39;ll give it a try, thanks Pax--I mean Captain.&quot;
+
+You scoff, &quot;Oh come on you should know I don&#39;t care about titles. This isn&#39;t a royal ball, this is piracy!&quot;
+
+[[Watch them try again]]</tw-passagedata><tw-passagedata pid="30" name="Continue sparring with Bri" tags="" position="636,1772" size="100,100">Round 2...fight!
+
+[[Meal 2...dinner!-&gt;dinner]]</tw-passagedata><tw-passagedata pid="31" name="Keep being Cal&#39;s brainless fetching (and fetching) assistant" tags="" position="1402,1722" size="100,100">Over the next few hours Cal&#39;s continued cannon tinkering appears to add the ability for the cannon to fire cutlery and other improvised ammunition. You hope it hasn&#39;t done any lasting damage.
+
+[[Okay then-&gt;dinner]]</tw-passagedata><tw-passagedata pid="32" name="Spar with Bri" tags="" position="806,1691" size="100,100">You practice with Bri for a few hours. It&#39;s clear that Bri, unlike you, has been keeping sharp since the Academy. While you never come close to beating Bri, they never stop smiling during the hours of sparring. You haven&#39;t been this exhausted for a while but you feel accomplished and dangerous, as a pirate captain should be.
+
+[[You also feel hungry, dinner time!-&gt;dinner]]
+
+(set: $bri_rep to $bri_rep + 1)</tw-passagedata><tw-passagedata pid="33" name="dinner" tags="" position="982,2577" size="100,100">For dinner you heat up a lovely shrimp scampi and crack open a bottle of wine. It&#39;s the night before the heist (and only a day out of port) so you can afford to be fancy with the food.
+
+
+After you settle in for the meal, Cal pipes up, “I figured out something cool about Pax’s cannon! Some of the sigils weren’t gauge-balanced so I had to re-engrave one of them and when I did that it turned out that the second seal couldn’t handle that level of power--”
+
+[[Continue listening]]
+[[Change the subject]]</tw-passagedata><tw-passagedata pid="34" name="Welp2" tags="" position="403,1852" size="100,100">You watch Ash descend the rope and gather themselves for a second before they jump down onto the waves.
+
 A small circle of Stilled water appears around Ash and they miraculously stand above the waves. Vibrating with joy, they wheel around and wave at you. Off balance from the rotation they stagger and the circle flickers.
 
 [[Oh no! Pull them up!-&gt;ohnopullthemup2]]
-[[Continue watching-&gt;continuewatching2]]</tw-passagedata><tw-passagedata pid="35" name="ohnopullthemup2" tags="" position="514,2012.622314453125" size="100,100">You need to protect your crew! You pull as hard as you can on the rope, even pouring a bit of your affinity into the fibers to amplify the Motion.
+[[Continue watching-&gt;continuewatching2]]</tw-passagedata><tw-passagedata pid="35" name="ohnopullthemup2" tags="" position="514,2012" size="100,100">You need to protect your crew! You pull as hard as you can on the rope, even pouring a bit of your affinity into the fibers to amplify the Motion.
 
 You catapult Ash onto the deck in a blur of shock.
 
@@ -224,14 +282,305 @@ You catapult Ash onto the deck in a blur of shock.
 
 Well. That could have gone better. You retreat to sulk in your cabin until it&#39;s time for [[dinner]].
 
-(set: $ash_rep to it - 1)</tw-passagedata><tw-passagedata pid="36" name="continuewatching2" tags="" position="329,2012.622314453125" size="100,100">Ash recovers and beams even brighter, nodding in approval as they go back to concentrating on maintaining the water&#39;s Stillness.
+(set: $ash_rep to it - 1)</tw-passagedata><tw-passagedata pid="36" name="continuewatching2" tags="" position="329,2012" size="100,100">Ash recovers and beams even brighter, nodding in approval as they go back to concentrating on maintaining the water&#39;s Stillness.
 
 The waves continue to roll around Ash, their platform standing solid against the rise and fall. 
 
 A couple more seconds pass and the platform begins to flicker but Ash is deep in concentration, lost to the world.
 
 [[Pull them up-&gt;pullthemup2]]
-[[Just keep watching-&gt;justkeepwatching2]]</tw-passagedata><tw-passagedata pid="37" name="pullthemup2" tags="" position="254,2162.622314453125" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="justkeepwatching2" tags="" position="404,2162.622314453125" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Just keep watching-&gt;justkeepwatching2]]</tw-passagedata><tw-passagedata pid="37" name="pullthemup2" tags="" position="465,2154" size="100,100">You need to protect your crew! You pull as hard as you can on the rope, even pouring a bit of your affinity into the fibers to amplify the Motion.
+
+You catapult Ash onto the deck in a blur.
+
+&quot;Okay fine, that was getting a bit out of hand. I think I could have gone a bit longer but that&#39;s good enough I guess. Try to wait a bit longer next time though.&quot; They walk back to the rail to climb down again
+
+You help them practice until it&#39;s time for [[dinner]].</tw-passagedata><tw-passagedata pid="38" name="justkeepwatching2" tags="" position="275,2143" size="100,100">Ash&#39;s eyes snap wide open as the platform disappates and they fall into the rolling sea. Uh oh.
+
+[[Welp, pull them up.-&gt;welppullthemup2]]</tw-passagedata><tw-passagedata pid="39" name="welppullthemup2" tags="" position="437,2308" size="100,100">You pull as hard as you can on the rope, even pouring a bit of your affinity into the fibers to amplify the Motion.
+
+You catapult Ash onto the deck in a sodden blur.
+
+&quot;Sparking ember and still ice that was awesome! I totally nailed that, let&#39;s go again!&quot; They skip (at least as much as you can skip on the deck of a ship) to the rail to climb down again.
+
+You help them practice until it&#39;s time for [[dinner]].
+
+(set: $ash_rep to it + 1)</tw-passagedata><tw-passagedata pid="40" name="Watch them try again" tags="" position="90,2419" size="100,100">Ash takes some time to concentrate before moving back to try again. 
+
+They smile and say, &quot;Hey, this might actually work!&quot; before sliding down the rope onto the water.
+
+A platform appears under Ash and nothing appears to change. However, this time around a look of intense concentration never leaves their face. The platform lasts a few more seconds than usual before dissipating. You haul them out of the water.
+
+&quot;That felt super weird! I think if I get the hang of it it&#39;ll really be a showstopper though. Let&#39;s go again!&quot;
+
+You keep up the practice until [[dinner]]. By the time the light&#39;s fading Ash can stay on the water for minutes at a time.
+
+(set: $ash_rep to it + 1)</tw-passagedata><tw-passagedata pid="41" name="Continue listening" tags="" position="908,2727" size="100,100">You nod through the rest of Cal&#39;s monologue, catching every seventh word. 
+
+&quot;That&#39;s neat, keep up the good work!&quot; you sneak in after what you think was a concluding pause. Cal smiles, going back to eating.
+
+You [[resume eating dinner]].
+
+(set: $cal_rep to it + 1)</tw-passagedata><tw-passagedata pid="42" name="Change the subject" tags="" position="1072,2727" size="100,100">&quot;Anyway, how about the weather?&quot;
+
+(if: $bri_rep &lt;= $ash_rep)[Bri interjects, &quot;Dead embers, Pax, you know we don&#39;t care about the weather with Ash on board. Cal, do you want to keep telling us about your project?&quot;](else:)[Ash interjects, &quot;Dead embers, Captain, you know we don&#39;t care about the weather with me on board. Cal, do you want to keep telling us about your project?&quot;]
+
+&quot;No, I&#39;m good. Sorry for droning on, Pax,&quot; Cal says, withdrawing into their pasta.
+
+[[Yikes.-&gt;resume eating dinner]]
+
+(set: $bri_rep to it - 1)</tw-passagedata><tw-passagedata pid="43" name="resume eating dinner" tags="" position="988,2884" size="100,100">After a couple of bites, Ash interrupts the clink of ceramic and silver to raise their glass.
+
+(if: $ash_rep &gt; 0)[&quot;I&#39;d like to thank all of you for helping me stand on my own. It&#39;s been hard escaping the grasp of my parents but now I&#39;m finally free on the sea! To rebellion!&quot;](else:)[&quot;To rebellion!&quot;]
+
+Everyone cheers, clinking their glasses. You join in, happy to have such a fantastic crew.
+
+[[Dinner begins to wind down.]]</tw-passagedata><tw-passagedata pid="44" name="Dinner begins to wind down." tags="" position="986,3030" size="100,100">You begin to think it might be time to retire to your room. The conversation around the table begins to slow down when Bri clears their throat.
+
+&quot;Everyone, there&#39;s something I need to tell you.&quot; Bri pauses.
+
+(if: $bri_rep &lt; 1)[&quot;I&#39;m glad to be part of this crew. Good night.&quot; Bri gets up and leaves.
+You shrug, [[going to your cabin a few minutes later]].]
+(else:)[&quot;I wasn&#39;t entirely honest with the goals of this job. There is a super valuable artifact on that ship but there&#39;s also the president of the North Seas Trading Company. They&#39;re the bastard whose shady shit is going to put my parents out on the street. My parents sacrificed so much to get me into the Academy and I can&#39;t just let this capitalist creep put them on a slow road to death. I know it&#39;s crazy but please don&#39;t get in my way tomorrow.&quot;
+
+Ash and Cal look to you for your opinion as the captain.
+
+[[&quot;Sure Bri, let&#39;s take this asshole down.&quot;]]
+[[&quot;I didn&#39;t sign up for murder and I don&#39;t want it on this job.&quot;]]]</tw-passagedata><tw-passagedata pid="45" name="going to your cabin a few minutes later" tags="" position="836,3180" size="100,100">[[You eventually go to bed, ready for the day to come.]]
+
+(set: $murder_endorsed to 2)</tw-passagedata><tw-passagedata pid="46" name="&quot;Sure Bri, let&#39;s take this asshole down.&quot;" tags="" position="986,3180" size="100,100">Bri nods, grim but determined. 
+
+&quot;We&#39;re behind you one hundred percent,&quot; Cal says. Ash looks unsteady but gives a weak thumbs up.
+
+That threw all hope at a casual conversation out the window so you [[return to your cabin to think]]
+
+(set: $murder_endorsed to 1)</tw-passagedata><tw-passagedata pid="47" name="&quot;I didn&#39;t sign up for murder and I don&#39;t want it on this job.&quot;" tags="" position="1136,3180" size="100,100">&quot;Really? You want to just leave this loose end dangling?&quot; Bri fumes. &quot;Fine. I respect your decision.&quot; Bri leaves the table.
+
+&quot;Alright...well...that was unexpected!&quot; Cal says, trying to break the silence as gently as possible. Ash looks unsteady and leaves without saying anything.
+
+That threw all hope at a casual conversation out the window so you [[return to your cabin to think]].
+
+(set: $murder_endorsed to 0)
+(set: $bri_rep to it - 1)</tw-passagedata><tw-passagedata pid="48" name="You eventually go to bed, ready for the day to come." tags="" position="894,3402" size="100,100">You wake up and gather the crew for a final meeting to go over the plan.
+
+[[Step One]]</tw-passagedata><tw-passagedata pid="49" name="Step One" tags="" position="893,3552" size="100,100">&quot;Okay, we&#39;re trying to get this whole job done in the span of the eclipse. Once it&#39;s dark they&#39;ll be suspicious but they&#39;ll also be blind. We&#39;ll sail as close as we can before our creaking gives us away.&quot;
+
+(if: ($cal_rep &gt; 0) and ($ash_rep &lt;= 0) and ($bri_rep &lt;= 0))[&quot;When we&#39;re there let&#39;s just bombard the brigantine with cannon fire until they raise the white flag and we take what&#39;s ours.&quot;
+
+Ash and Bri roll their eyes in sync but don&#39;t voice any concerns. [[It&#39;s time-&gt;bombard plan chosen]]](else:)[&quot;They might have a multi onboard who has an affinity with wood or a Still checking the water so we&#39;ll need a stealthy way of getting on board.&quot;
+
+(if: $ash_rep &lt;= 0)[&quot;We can take our rowboat. That&#39;s small enough to be sneaky. If Ash can handle it they can come and speed us up on the way over.&quot;
+
+&quot;Sure, I don&#39;t know, but sure,&quot; Ash says. You hide a wince.
+
+You say, &quot;Once we&#39;re on board we&#39;ll move on to [[step two]].&quot;](else:)[&quot;Ash has been working on this super impressive water platform thing. Do you want to explain it to everyone?&quot;
+(if: $ash_rep is 1)[
+Ash launches in, &quot;Sure! I Still the water then can walk across it with a bit of effort. I think I can keep it up for long enough to fasten a rope bridge to the brigantine.&quot;
+](else:)[
+Ash launches in, &quot;Sure! I Still the water then can walk across it as if it were land. The Captain helped me refine my technique a bit so it&#39;s easy peasy. I&#39;ll just run across and fasten a rope bridge to the brigantine.&quot;
+]
+You say, &quot;With the bridge in place we can sneak on undetected and get the job done. It&#39;s on to [[step two]]&quot;
+]]</tw-passagedata><tw-passagedata pid="50" name="step two" tags="" position="983,3695" size="100,100">&quot;Once onboard, Bri and I will move from room to room until we find the artifact&quot;
+(if: $murder_endorsed is 1)[&lt;br/&gt;&quot;Then we&#39;ll see if we can track down the company president. It shouldn&#39;t be hard to find the largest cabin and finish this.&quot;&lt;br/&gt;]
+&quot;Hopefully we&#39;ll get away but if not Cal will be here on the cannon ready to cover us.&quot;
+(if: $cal_rep &gt; 0)[&lt;br/&gt;&quot;Aye aye, captain!&quot; Cal said with only a small sprinkling of sarcasm.&lt;br/&gt;](else:)[&lt;br/&gt;&quot;Aye aye, captain!&quot; Cal said with heavy dollop of sarcasm.&lt;br/&gt;]
+&quot;That&#39;s the plan. Get ready to move in an hour.&quot;
+
+[[It&#39;s time]]
+
+(set: $plan to &#39;stealth&#39;)</tw-passagedata><tw-passagedata pid="51" name="bombard plan chosen" tags="" position="819,3701" size="100,100">[[Yes, it&#39;s time-&gt;It&#39;s time]]
+(set: $plan to &#39;bombard&#39;)</tw-passagedata><tw-passagedata pid="52" name="It&#39;s time" tags="" position="891,3937" size="100,100">10 minutes. Plenty of time for some crime. You return to your cabin.
+
+In your cabin, you check your reflection, adjusting the sword at your hip. You throw on your most most piratical coat, sure to strike fear in the hearts of many a merchant.
+
+You pause to say goodbye to your bonsai tree and make sure that Fay&#39;s water bowl is full before [[meeting your crew on deck]].</tw-passagedata><tw-passagedata pid="53" name="meeting your crew on deck" tags="" position="890,4087" size="100,100">&quot;Ash, get started. We should have some speed going before the eclipse or we&#39;ll take too long to close.&quot;
+
+Ash starts concentrating and the ketch accelerates.
+
+The only sound comes from the creaking of the rigging in the wind. Bri fiddles with their sword; unsheathing it, making a few test sweeps, then sheathing it again. Cal just stares into the distance.
+
+A sudden dimming of light is your only warning then [[the eclipse begins]].</tw-passagedata><tw-passagedata pid="54" name="the eclipse begins" tags="" position="892,4237" size="100,100">{&lt;script&gt;
+var white = document.getElementById(&#39;white-style&#39;);
+if (white) {
+white.parentNode.removeChild(white);
+}
+&lt;/script&gt;}
+
+(if: $plan is &#39;bombard&#39;)[ [[Get to work.-&gt;start bombard]]]
+(else:)[ [[Get to work.-&gt;start stealth]]]
+</tw-passagedata><tw-passagedata pid="55" name="start bombard" tags="" position="817,4387" size="100,100">&quot;Fire the cannon!&quot; You&#39;ve been wanting to say that for your entire time as a captain. Cal&#39;s terrifyingly modded cannon roars out and the brigantine rocks under the impact from. 
+
+You&#39;ve exhausted your supply of munitions and nearly exhausted Cal&#39;s travel supply (&quot;What, it&#39;s only logical&quot; they said) when the ship raises a white flag.
+
+Ash lets out a weary cheer and stops Stilling your ketch&#39;s movement. Bri doesn&#39;t relax. A small boat slides out from behind the brigantine.
+
+Bri snarls, &quot;I knew that bastard would run,&quot; and makes for your rowboat.
+
+[[You let them go. They row off.]]
+[[You follow, helping them cut the lines holding the boat in place.]]</tw-passagedata><tw-passagedata pid="56" name="start stealth" tags="" position="1313,4306" size="100,100">(if: $ash_rep &lt; 1)[
+You and Bri clamber into the rowboat, pausing to look back at Ash.
+
+&quot;I&#39;m sorry, but I can&#39;t do this,&quot; Ash says, &quot;I&#39;ll do what I can from here.&quot;
+
+[[You set off-&gt;plan without ash]]
+](else:)[
+&quot;Ash, do the thing!&quot; you order. They climb down to the water&#39;s surface, rope ladder in hand and start walking across. It feels like an eternity but eventually the ladder goes taut. It&#39;s time.
+
+[[You and Bri start climbing across.]]
+]</tw-passagedata><tw-passagedata pid="57" name="You let them go. They row off." tags="" position="741,4537" size="100,100">(set: $bri_is_dead to 1)
+
+You watch Bri recede into the distance, oars tearing gouts of water into the air. In the darkness of the eclipse you can barely see them catch up to the other rowboat. After a brief flash of steel they fall into the water.
+
+You board the brigantine, take the artifact, and [[sail away.-&gt;wrapup]]</tw-passagedata><tw-passagedata pid="58" name="You follow, helping them cut the lines holding the boat in place." tags="" position="892,4537" size="100,100">(set: $pax_no_hand to 1)
+
+You jump into the ship with Bri as it crashes into the water. They grab the oars, tearing gouts of water into the air. You can barely see the rowboat in the murky black.
+
+&quot;Long story short, bad person needs murder, okay?&quot; Bri manages to grunt punctuated by oar pulls. You nod and ready your sword.
+
+As you draw level with the rowboard Bri leaps over and you follow to the best of your ability.
+
+Luckily, only two guards greet you on the rowboat, the clerk-looking person cowering in the corner. You stab at the one nearest you, locking them in a duel. Clashing steel becomes your world for the next minute as you try your best to not die. You hear a triumphant yell from Bri and their guard topples into the water. Bri then stabs your guard, making for some excellent teamwork.
+
+You lower your guard and sit back to let Bri handle the clerk when that unassuming rat bastard draws a sword. Their first slash pushes back Bri and their second one is aimed at you. You raise your guard too slowly and your sword hand is replaced with a searing pain.
+
+You pass out and awaken back on the ship. &quot;Hey, you&#39;re awake. Sorry about that,&quot; Bri says, surprisingly sheepish considering their recent murderous escapades. &quot;I got the artifact from the brigantine. Job&#39;s done, Captain.&quot;
+
+You smile and drift back to sleep. Looks like the pirating life might suit you. You dream of [[the future-&gt;wrapup]] and hooks.</tw-passagedata><tw-passagedata pid="59" name="return to your cabin to think" tags="" position="1076,3300" size="100,100">[[You eventually go to bed, ready for the day to come.]]</tw-passagedata><tw-passagedata pid="60" name="plan without ash" tags="" position="1192,4454" size="100,100">(set: $ash_saves_you to 0)
+
+You and Bri start rowing towards the brigantine. As you cut through the water you notice the swirls left by the rowboat&#39;s hull and oars are being smoothed out by Ash&#39;s efforts back on the ketch.
+
+You climb aboard. It seems like the brigantine&#39;s crew hasn&#39;t bothered lighting torches yet and is just waiting for their eyes to adjust. You and Bri take advantage of this laziness to [[sneak below deck]].</tw-passagedata><tw-passagedata pid="61" name="You and Bri start climbing across." tags="" position="1389,4456" size="100,100">(set: $ash_saves_you to 1)
+
+You make your way across the bridge swaying above the waves. Ash greets you on the other side, giddy with excitement.
+
+It seems like the brigantine&#39;s crew hasn&#39;t bothered lighting torches yet and is just waiting for their eyes to adjust. You motion Ash to stay hidden above deck while you and Bri take advantage of this laziness to [[sneak below-&gt;sneak below deck]].</tw-passagedata><tw-passagedata pid="62" name="sneak below deck" tags="" position="1306,4646" size="100,100">Navigating the brigantine&#39;s corridors comes naturally to Bri as they lead you to the hold. Bri knocks out a guard on the door in one swift movement before you can even start coming up with a plan.
+
+&quot;You&#39;re pretty good at this,&quot; you whisper while you&#39;re sorting through the hold.
+(if: $murder_endorsed is 1)[&quot;I&#39;ve had time to prepare, my parents need protecting,&quot; they reply.](else:)[&quot;I&#39;ve had time to prepare,&quot; they reply.]
+They show you a metal box. &quot;Here we go. The artifact&#39;s in here. Now it&#39;s time to finish this.&quot;
+
+(if: $murder_endorsed is 2)[&quot;What? Why aren&#39;t we just leaving?&quot;
+&quot;There&#39;s something I have to do before I go. Just wait topside and don&#39;t get in the way.&quot;
+[[Leave-&gt;go topside]]
+]
+
+(if: $murder_endorsed is 0)[&quot;Just wait topside and don&#39;t get in the way,&quot; Bri says.
+[[&quot;No, I&#39;ve decided I&#39;m with you.&quot;-&gt;&quot;I&#39;m with you.&quot;]]
+[[&quot;Alright, fine. I&#39;ll wait for you topside.&quot;-&gt;go topside]]
+]
+(if: $murder_endorsed is 1)[
+[[&quot;I&#39;m with you.&quot;]]
+[[&quot;Alright, good luck. I&#39;ll wait for you topside.&quot;-&gt;go topside]]
+]</tw-passagedata><tw-passagedata pid="63" name="&quot;I&#39;m with you.&quot;" tags="" position="1142,4697" size="100,100">You follow Bri down the passage. They peak out from behind a corner just as a crewmember emerges from the door behind you.
+
+Your panicked pommel strike stifles the cry for help but the damage is done. Guards flood in from both ends of the corridor.
+
+The first guard falls in a flash of steel from Bri. They flex their grasp of Motion that kept them at the top of the Academy&#39;s dueling club, cutting down guard after guard. You just try to survive, using your affinity with wood to surprise one guard as the floor buckles underneath them.
+
+Bri&#39;s efforts clear a path to the ornate door at the end of the hall. They kick it open, revealing a terrified clerk gathering money from a safe in the corner. &quot;Sorry Mel, it&#39;s just business,&quot; Bri says before stabbing them through the heart, &quot;Let&#39;s go.&quot;
+Shoving away the last guard before pinning them to the wall with some well-placed splinters you agree, [[&quot;Yes, let&#39;s.&quot;]]</tw-passagedata><tw-passagedata pid="64" name="go topside" tags="" position="1426,4796" size="100,100">Head spinning, you go topside, leaving Bri to their fate. You hear screams and a commotion before Bri emerges, drenched in blood.
+&quot;Please worry, nearly all of this is mine,&quot; they say before collapsing on the deck. &quot;Here, take this. I completed my goal so I&#39;ll finish my job for you too,&quot; they hand you the small box containing the artifact before closing their eyes forever.
+
+Spying some lamp oil, you douse the deck and ignite it. A fitting pyre for a friend.
+
+(set: $bri_is_dead to 1)
+
+[[Back to the ship.-&gt;wrapup]]</tw-passagedata><tw-passagedata pid="65" name="&quot;Yes, let&#39;s.&quot;" tags="" position="1156,4847" size="100,100">You pick your way over those of the crew who decided to fight.
+
+
+(if: $ash_saves_you is 0)[
+Topside, you finally relax. You&#39;re a professional pirate complete with a daring crew and a dashing coat. That&#39;s when you hear a grunt to your side. You try to guard but you&#39;re too slow. The sensation in your sword hand is replaced by searing pain.
+
+Bri rushes up from behind you and slices open the guard.
+
+They look at your stump. &quot;Hey Pax, stay with me. We&#39;ll get you a nice hook when this is all over and you&#39;ll be fine. Okay?&quot; they say, mustering a weak smile.
+
+You give as much of a nod as you can and allow Bri to guide you onto the rowboat and [[back to the ship-&gt;wrapup]].
+
+(set: $pax_no_hand to 1)
+](else:)[
+Topside, you finally relax. You&#39;re a professional pirate complete with a daring crew and a dashing coat. That&#39;s when you hear a grunt to your side. You try to guard but you&#39;re too slow. An exclamation of pain hits your ears. Rather nicely, it&#39;s not yours.
+
+(if: $ash_rep is 2)[
+&quot;Don&#39;t worry, Captain! I Stilled them,&quot; Ash says, waving from over near the ladder, &quot;Looks like it was rather more painful for them than I expected.&quot;
+
+&quot;You what? Oh dead embers I guess learning people are mostly water went to your head.&quot;](else:)[
+&quot;Don&#39;t worry, Captain! I got them,&quot; Ash says, waving a hefty looking plank, &quot;Looks like it was rather more painful for them than I intended.&quot;
+
+&quot;And they say nobles don&#39;t know how to have fun.&quot;]
+
+Now in the clear for real, you yell, &quot;I have the best crew!&quot; gathering Ash and the stunned Bri into an ill-advised group hug.
+
+&quot;But not the best understanding of how to use cannons in heists!&quot; Cal shouts from somewhere in the inky black of the eclipse.
+
+[[You return to the ship, triumphant-&gt;wrapup]].
+]</tw-passagedata><tw-passagedata pid="66" name="wrapup" tags="" position="1128,5151" size="100,100">You sit at your desk, thinking over the blur of the last few weeks.
+
+(if: $ash_rep &lt; 0)[
+Ash is an angry ball of anxiety who left when you make port and returned to their unfulfilled life as a noble.
+](else:)[
+Ash looks calm for the first time in their life. Every dinner they&#39;ve pester you with a new application they&#39;ve dreamed up for their increasingly impressive Stilling.
+]
+
+(if: $bri_is_dead is 1)[
+Bri is dead.
+](else-if: $bri_rep &lt; 0)[
+You can&#39;t say you&#39;re happy with having Bri on your crew but they&#39;ve proven their worth so far.
+](else:)[
+You&#39;re happy to have Bri on your crew. Every good ship needs some muscle and really, what&#39;s a little murder between friends?
+]
+
+(if: $cal_rep &lt; 0)[
+Cal, unsatisfied with the complete lack of challenge posed by your ship, left the night after you land. They even spirited away your cannon, citing it as &quot;compensation for mental damages.&quot;
+](else:)[
+Cal is happy to be with their friends. They disappeared the first night in port but returned the next day with a staggering assortment of contraptions. &quot;My cut is at least 600 din, right? If not we can just take this out of the shared funds, I can justify it,&quot; they said without a hint of contrition.
+]
+
+(if: $pax_no_hand is 1)[
+Tired but accomplished, you shakily fill in the [[first line of your ledger]], not quite used to writing with your only hand.
+](else:)[
+Tired but accomplished, you fill in the [[first line of your ledger]].
+]</tw-passagedata><tw-passagedata pid="67" name="first line of your ledger" tags="" position="1128,5301" size="100,100">&lt;style&gt;
+tr:nth-child(even) {
+	background-color: rgba(128, 128, 128, 0.3);
+}
+td {
+	padding: 0.5rem;
+}
+&lt;/style&gt;
+
+&lt;table&gt;
+	&lt;tr style=&quot;border-bottom: 1px solid black&quot;&gt;
+		&lt;th&gt;Profit&lt;/th&gt;
+		&lt;th&gt;Loss&lt;/th&gt;
+		&lt;th&gt;Revenue&lt;/th&gt;
+		&lt;th&gt;Notes&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1500&lt;/td&gt;
+		&lt;td&gt;200&lt;/td&gt;
+		&lt;td&gt;1300&lt;/td&gt;
+		&lt;td&gt;Bri Job&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
